@@ -18,13 +18,13 @@ def point(): #makes the point function and stores the points
     #
     return 1 
     
-#Code for the questions
+#Code for going through the the questions and seeing if the answer from the user is correct, or incorrect
 
 for i in range(len(questions)):
     print("Question", i+1, "-", questions[i]) #prints the next question
     user_answer = input("Answer - ") #tells the user to answer the question
-    if user_answer.lower() == answers[i].lower(): 
-       function() #shows the user they got it correct
+    if user_answer.lower() == answers[i].lower(): #my if statement
+       function() #activates the function that shows the user they got it correct by telling them in the console.
        points = points + point() # sends 1 point to the point function
     else:
         print("Incorrect, the correct answer is", answers[i])    #doesn't add 1 to the points because you got it incorrect, and also shows the correct answer to the user.
@@ -32,6 +32,7 @@ for i in range(len(questions)):
 print("Your total points are:", points, "/", len(questions))    #calculates the amount of questions you got correct and how many you got incorrect.
 
 def end():
-  print("Thanks for playing", username,"!") #prints the end + the username + !
+  print("Thanks for playing", username,"!") #prints the ending message and the username and a !
   
 end()  #overcomplication of printing the ending
+quit()
