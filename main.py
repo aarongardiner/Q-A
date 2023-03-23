@@ -1,3 +1,7 @@
+print('Enter your name -') #asks the user for their name
+username = input()#makes the name the user puts into a variable
+print("Hello, " + username) 
+
 #This is where the questions and answers are stored.
 questions = ["what main classes are in A block?", " what main classes are in B block?", " what main classes are in C block", " what main classes are in D block", " what main classes are in E block", "What is the main subject studied in F-block?", "what main classes are in G block?", "what main classes are in H block?", "what main classes are in K block?", "what main classes are in M block?", ] #questions variable
 answers = ["Art", "Tech", "Math", "Social Studies", "Tech", "Science", "English", "Food", "Languages", "Music"] #answers variable 
@@ -28,6 +32,6 @@ for i in range(len(questions)):
 print("Your total points are:", points, "/", len(questions))    #calculates the amount of questions you got correct and how many you got incorrect.
 
 def end():
-  print("Thanks for playing!")
+  print("Thanks for playing", username,"!") #prints the end + the username + !
   
 end()  #overcomplication of printing the ending
